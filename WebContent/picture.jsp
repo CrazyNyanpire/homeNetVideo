@@ -42,7 +42,7 @@
 					}
 				})
 				if($(".pictureRooms img").height()<10){
-					$(".prevPage,.nextPage").height(1000);
+					$(".prevPage,.nextPage").height(window.screen.height);
 				}
 				else{
 					$(".prevPage,.nextPage").height($(".pictureRooms img").height());
@@ -87,7 +87,7 @@
 .prevPage,.nextPage{
 	top:0;
 	opacity: 0;
-	position: absolute;
+	position: fixed;
 }
 .prevPage{
 	left:0;
